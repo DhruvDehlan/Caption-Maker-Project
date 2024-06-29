@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap');
+.homepage h1{
+    text-align: center;
+    font-family: 'Manrope' sans-serif;
+    font-weight: 600;
+    background-image: linear-gradient(to right, #ffcc00, #feb704, #faa210, #f48e1b, #ec7a23, #ef642e, #f04c3b, #ed3049, #ef0066, #e4008a, #c900b1, #9316d8);
+    z-index: 10;
+    color: white;
+    padding: 1rem 0rem;
+    width: 100%;
+    margin-top: 0px;
+    
+  
+}
+
+.primarycontainer{
+    display: flex;
+    justify-content: center;
+
+}
+
+.add-video-link{
+    text-align: center;
+    font-family: 'Manrope' sans-serif;
+    color: rgb(18, 18, 18);
+    font-size: 1.3rem;
+}
+
+.caption-list-hidden{
+    display: none;
+}
+.caption-list{
+    display: flex;
+    flex-direction: column;
+    background-color: #6200EE;
+    width: 40%;
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    margin: 1rem ;
+    box-shadow: 0 15px 30px 0 rgba(0, 0, 0, .25);
+    color: white;
+    opacity: 90%;
+    height: fit-content;
+    
+}
+
+.caption-header{
+    display:grid;
+    grid-template-columns: 1.5fr 1.5fr 0.5fr;
+}
+
+.caption-header  h4 {
+    justify-self: center;
+}
+
+.edit{
+    height: 25px;
+    width:25px;
+    align-self: center;
+    justify-self: center;
+    cursor: pointer;
+}
+
+
+.caption-item{
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 0.5fr;
+    background-color: white;
+    margin: 10px 0px;
+    border-radius: 10px;
+    padding: 0px 10px;
+}
+
+.caption-item p {
+    max-width: 100%;
+    word-wrap: break-word; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+    white-space: normal; 
+    justify-self: center;
+    color: black;
+  }
+
+
+  footer{
+    background-color:black;
+    color: white;
+    font-family: 'Manrope' sans-serif;
+    padding: 0.5rem 0rem;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    
+  }
+
+  @media (max-width:768px) {
+
+    .homepage{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .homepage h1{
+        font-size: 24px;
+    }
+    .primarycontainer{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .caption-list{
+        width: 80%;
+    }
+    
+    .add-video-link{
+        align-self: center;
+        font-family: 'Manrope' sans-serif;
+        color: rgb(18, 18, 18);
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .homepage footer p{
+        font-size: 0.8rem;
+    }
+  }
